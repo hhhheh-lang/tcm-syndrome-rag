@@ -99,7 +99,7 @@ def main():
     #document=SimpleDirectoryReader(doc_path,required_exts=['.txt']).load_data()
 
 
-    print("-"*10+f'正在创建集合{collection_name},并存储向量数据...'+"-"*10+)
+    print("-"*10+f'正在创建集合{collection_name},并存储向量数据...'+"-"*10)
     vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
     storage_context=StorageContext.from_defaults(vector_store=vector_store)
     index=VectorStoreIndex.from_documents(documents,storage_context=storage_context)
