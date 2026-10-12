@@ -1,0 +1,15 @@
+# ---- LLaMA-Index 核心与集成包 ----
+llama-index-core
+llama-index-vector-stores-chroma
+llama-index-llms-dashscope
+llama-index-embeddings-dashscope
+
+# ---- 向量数据库 ----
+chromadb
+dashscope
+tiktoken
+
+# ---- 工具 ----
+python-dotenv        # load_dotenv() 加载 .env 里的 DASHSCOPE_API_KEY
+tqdm                 # 进度条
+
